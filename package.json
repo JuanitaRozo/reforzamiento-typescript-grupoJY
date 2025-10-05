@@ -1,0 +1,22 @@
+{
+  "name": "reforzamiento-typescript-grupojy",
+  "version": "1.0.0",
+  "description": "Actividad de refuerzo de TypeScript - Grupo JY",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev:01": "ts-node ejercicios/01-variables.ts",
+    "dev:02": "ts-node ejercicios/02-template-string.ts",
+    "dev:03": "ts-node ejercicios/03-object-literal.ts",
+    "dev:04": "ts-node ejercicios/04-arrays.ts",
+    "dev:05": "ts-node ejercicios/05-functions.ts",
+    "dev:06": "ts-node ejercicios/06-obj-destructuring.ts",
+    "dev:07": "ts-node ejercicios/07-array-destructuring.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
