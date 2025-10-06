@@ -2,10 +2,10 @@
 
 // Definir un objeto estudiante
 const estudiante = {
-    nombre: "María López",
-    edad: 22,
-    carrera: "Medicina",
-    semestre: 6,
+    nombre: "Sebastian Tavera",
+    edad: 26,
+    carrera: "Mecanica Automotriz",
+    semestre: 4,
     
     // Método que retorna una descripción
     obtenerDescripcion(): string {

@@ -2,11 +2,11 @@
 
 // Reutilizar el objeto estudiante (similar al ejercicio 3)
 const estudiante = {
-    nombre: "Diego Ramirez",
-    edad: 23,
-    carrera: "Derecho",
-    semestre: 8,
-    universidad: "Universidad Nacional"
+    nombre: "Maria Castro",
+    edad: 22,
+    carrera: "Zootecnia",
+    semestre: 7,
+    universidad: "Universidad de cundinamarca",
 };
 
 // Desestructurar nombre y carrera

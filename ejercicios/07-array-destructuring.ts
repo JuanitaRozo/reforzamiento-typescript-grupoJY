@@ -1,7 +1,7 @@
 // Ejercicio 7: Desestructuración de Arreglos
 
 // Reutilizar el arreglo de calificaciones
-const calificaciones: number[] = [85, 92, 78, 96, 88, 90];
+const calificaciones: number[] = [40, 32, 48, 40, 47, 47];
 
 // Desestructurar el primer y segundo elemento
 const [primeraCalificacion, segundaCalificacion] = calificaciones;
