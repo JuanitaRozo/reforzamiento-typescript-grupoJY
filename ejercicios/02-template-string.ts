@@ -1,22 +1,20 @@
-// Ejercicio 2: Cadenas de Plantilla
+﻿// Ejercicio 2: Cadenas de Plantilla
+// Implementado por: Juanita - Grupo JY
 
-// Declarar variables - USAR NOMBRES DIFERENTES para evitar conflictos
-const nombreEstudiante: string = "Carlos Mendoza";
-const carreraEstudiante: string = "Ingeniería de Sistemas";
-const semestreEstudiante: number = 4;
+// Declarar variables
+const nombre: string = 'Carlos Mendoza';
+const carrera: string = 'Ingeniería de Sistemas';
+const semestre: number = 4;
 
 // Usar template string para mostrar un mensaje en consola
-console.log("=== EJERCICIO 2: CADENAS DE PLANTILLA ===");
-console.log(`
+console.log('=== EJERCICIO 2: CADENAS DE PLANTILLA ===');
+console.log(
 Información del Estudiante:
 ---------------------------
-Nombre: ${nombreEstudiante}
-Carrera: ${carreraEstudiante}
-Semestre: ${semestreEstudiante}
+Nombre: 
+Carrera: 
+Semestre: 
 
 Mensaje completo: 
-"Hola, soy ${nombreEstudiante}, estudio ${carreraEstudiante} y voy en ${semestreEstudiante} semestre."
-`);
-
-export {} //CONVIERTE EL ARCHIVO EN MÓDULO
-
+'Hola, soy , estudio  y voy en  semestre.'
+);
