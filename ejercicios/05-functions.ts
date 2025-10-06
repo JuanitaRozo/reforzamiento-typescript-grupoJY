@@ -24,9 +24,15 @@ const notas1: number[] = [45, 42, 48, 46, 48];
 const notas2: number[] = [40, 45, 40];
 const notas3: number[] = []; // Caso vacío
 
+yohan-ejercicio5
 console.log('Promedio de [' + notas1.join(', ') + ']: ' + calcularPromedio(notas1).toFixed(2));
 console.log('Promedio de [' + notas2.join(', ') + ']: ' + calcularPromedio(notas2).toFixed(2));
 console.log('Promedio de arreglo vacío: ' + calcularPromedio(notas3));
+
+console.log(`Promedio de [${notas1.join(', ')}]: ${calcularPromedio(notas1).toFixed(2)}`);
+console.log(`Promedio de [${notas2.join(', ')}]: ${calcularPromedio(notas2).toFixed(2)}`);
+console.log(`Promedio de arreglo vacío: ${calcularPromedio(notas3)}`);
+main
 
 // Función alternativa con método reduce
 function calcularPromedioReduce(calificaciones: number[]): number {
@@ -35,16 +41,28 @@ function calcularPromedioReduce(calificaciones: number[]): number {
 }
 
 console.log('\nUsando método reduce:');
+yohan-ejercicio5
 console.log('Promedio: ' + calcularPromedioReduce(notas1).toFixed(2));
+
+console.log(`Promedio: ${calcularPromedioReduce(notas1).toFixed(2)}`);
+main
 
 // Función con parámetros opcionales y valor por defecto
 function generarReporte(nombre: string, calificaciones: number[], materia: string = 'Matemáticas'): string {
     const promedio = calcularPromedio(calificaciones);
+yohan-ejercicio5
     return 'Reporte de ' + nombre + ' - ' + materia + ': Promedio = ' + promedio.toFixed(2);
+
+    return `Reporte de ${nombre} - ${materia}: Promedio = ${promedio.toFixed(2)}`;
+main
 }
 
 console.log('\nReporte con función adicional:');
 console.log(generarReporte('Juanita Rozo', notas1));
 console.log(generarReporte('Yohan Dussan', notas2, 'Física'));
 
+yohan-ejercicio5
 export {}; // CONVIERTE EL ARCHIVO EN MÓDULO
+
+export {};
+ main
