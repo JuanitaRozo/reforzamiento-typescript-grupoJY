@@ -35,11 +35,21 @@ console.log(`Nombre completo: ${nombreCompleto}`);
 console.log(`Nota promedio: ${notaPromedio}`);
 
 // ===== 3. DESTRUCTURACIÓN CON VALORES POR DEFECTO =====
-const { ciudad, activo, semestre = 5 } = estudiante;
+// CORRECCIÓN: semestre no existe en Estudiante, usar una propiedad que sí existe o crear interfaz extendida
+interface EstudianteCompleto extends Estudiante {
+    semestre?: number; // Hacer la propiedad opcional
+}
+
+const estudianteCompleto: EstudianteCompleto = {
+    ...estudiante,
+    semestre: 6 // Agregar semestre
+};
+
+const { ciudad, activo, semestre = 5 } = estudianteCompleto;
 console.log("\n--- Destructuración con Valores por Defecto ---");
 console.log(`Ciudad: ${ciudad}`);
 console.log(`Activo: ${activo}`);
-console.log(`Semestre: ${semestre}`);
+console.log(`Semestre: ${semestre}`); // Ahora sí funciona
 
 // ===== 4. DESTRUCTURACIÓN EN PARÁMETROS DE FUNCIÓN =====
 function mostrarInfoEstudiante({ nombre, edad, carrera, promedio = 0 }: Estudiante): void {
