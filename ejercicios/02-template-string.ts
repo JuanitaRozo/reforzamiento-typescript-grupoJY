@@ -1,20 +1,20 @@
 ﻿// Ejercicio 2: Cadenas de Plantilla
-// Implementado por: Juanita - Grupo JY
 
 // Declarar variables
-const nombre: string = 'Carlos Mendoza';
-const carrera: string = 'Ingeniería de Sistemas';
-const semestre: number = 4;
+const nombreEstudiante: string = 'Yohan Dussan';
+const carreraEstudiante: string = 'Ingeniería de Sistemas';
+const semestreEstudiante: number = 9;
 
-// Usar template string para mostrar un mensaje en consola
+// Usar concatenación para mostrar un mensaje en consola
 console.log('=== EJERCICIO 2: CADENAS DE PLANTILLA ===');
-console.log(
-Información del Estudiante:
----------------------------
-Nombre: 
-Carrera: 
-Semestre: 
+console.log('');
+console.log('Información del Estudiante:');
+console.log('---------------------------');
+console.log('Nombre: ' + nombreEstudiante);
+console.log('Carrera: ' + carreraEstudiante);
+console.log('Semestre: ' + semestreEstudiante);
+console.log('');
+console.log('Mensaje completo:');
+console.log('Hola, soy ' + nombreEstudiante + ', estudio ' + carreraEstudiante + ' y voy en ' + semestreEstudiante + ' semestre.');
 
-Mensaje completo: 
-'Hola, soy , estudio  y voy en  semestre.'
-);
+export {}; // CONVIERTE EL ARCHIVO EN MÓDULO
