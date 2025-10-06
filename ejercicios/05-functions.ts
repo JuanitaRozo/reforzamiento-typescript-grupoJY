@@ -1,4 +1,6 @@
-// Ejercicio 5: Funciones
+﻿// Ejercicio 5: Funciones
+// Implementado por: Yohan - Grupo JY
+
 // Crear una función calcularPromedio
 function calcularPromedio(calificaciones: number[]): number {
     if (calificaciones.length === 0) {
@@ -16,15 +18,15 @@ function calcularPromedio(calificaciones: number[]): number {
 }
 
 // Probar la función con calificaciones
-console.log("=== EJERCICIO 5: FUNCIONES ===");
+console.log('=== EJERCICIO 5: FUNCIONES ===');
 
 const notas1: number[] = [85, 92, 78, 96, 88];
 const notas2: number[] = [100, 95, 90];
 const notas3: number[] = []; // Caso vacío
 
-console.log(`Promedio de [${notas1.join(', ')}]: ${calcularPromedio(notas1).toFixed(2)}`);
-console.log(`Promedio de [${notas2.join(', ')}]: ${calcularPromedio(notas2).toFixed(2)}`);
-console.log(`Promedio de arreglo vacío: ${calcularPromedio(notas3)}`);
+console.log(\Promedio de [\]: \\);
+console.log(\Promedio de [\]: \\);
+console.log(\Promedio de arreglo vacío: \\);
 
 // Función alternativa con método reduce
 function calcularPromedioReduce(calificaciones: number[]): number {
@@ -32,5 +34,15 @@ function calcularPromedioReduce(calificaciones: number[]): number {
     return calificaciones.reduce((a, b) => a + b, 0) / calificaciones.length;
 }
 
-console.log("\nUsando método reduce:");
-console.log(`Promedio: ${calcularPromedioReduce(notas1).toFixed(2)}`);
+console.log('\nUsando método reduce:');
+console.log(\Promedio: \\);
+
+// Función con parámetros opcionales y valor por defecto
+function generarReporte(nombre: string, calificaciones: number[], materia: string = 'Matemáticas'): string {
+    const promedio = calcularPromedio(calificaciones);
+    return \Reporte de \ - \: Promedio = \\;
+}
+
+console.log('\nReporte con función adicional:');
+console.log(generarReporte('Juanita Rozo', notas1));
+console.log(generarReporte('Yohan Dussan', notas2, 'Física'));
