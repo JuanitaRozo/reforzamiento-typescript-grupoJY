@@ -1,7 +1,8 @@
-// Ejercicio 4: Arreglos
+﻿// Ejercicio 4: Arreglos
+// Implementado por: Juanita - Grupo JY
 
 // Crear un arreglo con calificaciones
-const calificaciones: number[] = [45, 40, 35, 35, 45, 48];
+const calificaciones: number[] = [85, 92, 78, 96, 88, 90];
 
 // Calcular el promedio con un bucle for
 let suma: number = 0;
